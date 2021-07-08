@@ -1,0 +1,694 @@
+:root {
+    --Dark-Blue: hsl(233, 26%, 24%); 
+    --Lime-Green: hsl(136, 65%, 51%); 
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%); 
+    --Light-Grayish-Blue: hsl(220, 16%, 96%); 
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+/**************** Navigation section **************/
+.nav-section .nav{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+    grid-template-areas: 
+        "easybank-logo . nav-list invite drop-down-menu close-icon";
+    padding: 20px 0px 20px 100px;
+    background-color: var(--White);
+    margin-right: auto; 
+}
+
+.nav-section .nav .nav-checkbox{
+    display: none;
+}
+
+.nav-section .nav .nav-menu{
+    display: flex;
+    margin-top: 10px;
+}
+
+.nav-section .nav .nav-menu li {
+    list-style: none;
+    margin-left: 20px;
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+
+}
+
+.nav-section .nav .nav-menu a{
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+
+}
+
+.nav-section .nav .nav-menu a:hover {
+    color: var(--Dark-Blue)
+}
+
+.nav-section .invite{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 30px; 
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: var(--White);
+    font-size: 15px;
+    background-color: var(--Lime-Green);
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+}
+
+.nav-section .invite:hover{
+    color: var(--Dark-Blue);
+    opacity: 0.5;
+}
+
+.nav-section .nav .hamburger {
+    display: none;
+    padding-right: 0px;  
+}
+
+/* .nav-section .close-icon{
+    padding-left: 0px;
+    margin-right: -50px;
+} */
+
+/************** next generation section *********************/
+.next-generation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "mobile-img next-gen";
+    background-color: var(--Very-Light-Gray);
+    
+}
+
+.next-generation .mobile-img{
+    order: 2;
+    background: url("../images/bg-intro-desktop.svg") no-repeat ;
+    background-size: 150% 95.5%; 
+    background-position: 17% -480%;
+    margin-bottom: -310px;
+    
+}
+
+.next-generation .mobile-img img {
+    object-position: 120px -120px;
+}
+
+.next-generation .next-gen{
+    order: 1;
+    padding: 150px 80px 0px 100px;
+    
+}
+
+.next-generation .next-gen h1{
+    font-size: 50px;
+    padding-bottom: 40px;
+    color: var(--Dark-Blue);
+    
+}
+
+.next-generation .next-gen p{
+    color: var(--Grayish-Blue);
+    padding-bottom: 40px;
+}
+
+.next-generation .next-gen a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: var(--White);
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--Lime-Green);
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+}
+
+.next-generation .next-gen a:hover {
+    color: var(--Dark-Blue);
+    opacity: 0.5;
+}
+
+/************* why choose easybank *****************/
+
+.why-choose-easybank{
+    background-color: var(--Light-Grayish-Blue);
+
+}
+
+.why-choose-easybank .why-easy-banking{
+    padding: 100px 50% 0px 100px;
+}
+
+.why-choose-easybank .why-easy-banking h3{
+    font-size: 35px;
+    color: var(--Dark-Blue);
+    padding-bottom: 40px;
+}
+
+.why-choose-easybank .why-easy-banking p{
+    color: var(--Grayish-Blue);
+    padding-bottom: 60px;
+}
+
+.why-choose-easybank .easy-banking{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 150px 0px 100px;
+}
+
+.why-choose-easybank .easy-banking img{
+    padding-bottom: 40px;
+}
+
+.why-choose-easybank .easy-banking h4{
+    padding-bottom: 30px;
+    columns: var(--Dark-Blue);
+    font-size: 20px;
+}
+
+.why-choose-easybank .easy-banking p{
+    padding-bottom: 100px;
+    color: var(--Grayish-Blue);
+}
+
+/*************** latest artticle section ***********/
+
+.latest-article{
+    background-color: var(--Very-Light-Gray);
+    margin-bottom: -100px;
+}
+
+.latest-article h3{
+    color: var(--Dark-Blue);
+    font-size: 35px;
+    padding: 90px 0px 40px 100px;
+}
+
+.by-clair{
+    display: grid;
+    gap: 1.3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0px 150px 100px 100px;
+}
+
+.by-clair .by-claire img,.by-clair .by-wilson img{
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.by-clair .by-claire img.currency-image{
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
+}
+
+.by-clair .by-claire,.by-clair .by-wilson {
+    background-color: var(--White); 
+    margin-bottom: 100px;
+    border-radius: 6px;
+}
+
+.by-clair .by-claire p > span,.by-clair .by-wilson p > span{
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+}
+
+.by-clair .by-claire .by-p,.by-clair .by-wilson .by-p{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+.by-clair .by-claire h4,.by-clair .by-wilson h4{
+    color: var(--Dark-Blue);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.by-clair .by-claire p,.by-clair .by-wilson p{
+    color: var(--Grayish-Blue);
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/**************** footer section *******************/
+.footer-section{
+    background-color: var(--Dark-Blue);
+
+}
+
+ .footer-section footer{
+    display: flex;
+    gap: 7rem;
+    align-items: center; 
+    
+} 
+
+.footer-section footer .logo-with-icons{
+    padding-left: 100px; 
+    padding-top: 40px; 
+    padding-bottom: 40px;   
+} 
+
+
+.footer-section footer .logo-with-icons .footer-icons{
+    padding-top: 45px;
+}
+
+.footer-section footer ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-section footer ul li{
+    padding-bottom: 15px;
+    color: var(--Grayish-Blue);
+}
+
+.footer-section footer ul li a{
+    text-decoration: none;
+    color: var(--Very-Light-Gray);
+}
+
+.footer-section footer .footer-link-2{
+    margin-right: 210px;
+}
+
+.footer-section footer .footer-link-3 a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-left: 80px;
+    color: var(--White);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--Lime-Green);
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+}
+
+.footer-section footer .footer-link-3 a:hover {
+    color: var(--Dark-Blue);
+    opacity: 0.5;
+}
+
+.footer-section footer .footer-link-3 ul{
+    padding-top: 40px;
+}
+
+
+
+/********** mobile responsive ***************/
+
+@media only screen and (max-width: 375px) {
+    /**************** Navigation section **************/
+    .nav-section .nav {
+        display: block;
+        position: relative;
+        padding: 20px 0px 20px 20px;
+        background-color: var(--White);
+    }
+
+    .nav-section .nav .nav-menu {
+        display: block;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 170px;
+    }
+
+    .nav-section .nav .nav-menu li {
+        display: none;
+        list-style: none;
+        margin: 10px 0;
+        color: var(--Grayish-Blue);
+        font-size: 17px;
+        font-weight: bolder;
+
+    }
+
+    .nav-section .nav .nav-menu a {
+        text-decoration: none;
+        color: var(--Grayish-Blue);
+
+    }
+
+    .nav-section .nav .nav-menu a:hover {
+        color: var(--Dark-Blue)
+    }
+
+    .nav-section  .invite {
+        display: none;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 50px;
+        padding: 10px 30px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        font-weight: bold;
+        color: var(--White);
+        font-size: 15px;
+        background-color: var(--Lime-Green);
+        background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    }
+
+    .nav-section .invite:hover {
+        color: var(--Dark-Blue);
+        opacity: 0.5;
+    }
+
+    .nav-section .nav .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 1.25rem 1rem;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+
+    .nav-section .nav .hamburger .close-icon{
+        display: none;
+    } 
+
+    /* toggle the hamburger menu in mobile view */
+    .nav-section .nav #nav-checkbox:checked ~ ul.nav-menu li{
+        display: block;
+    }
+
+    /* change from menu to close icon on tap */
+    .nav-section .nav #nav-checkbox:checked ~ label.hamburger .close-icon{
+        display: block;
+        
+    }
+
+    .nav-section .nav #nav-checkbox:checked ~ label.hamburger .drop-down-menu{
+        display: none;
+    }
+
+
+    /************** next generation section *********************/
+    .next-generation {
+        display: block;
+        background-color: var(--Very-Light-Gray);
+
+    }
+
+    .next-generation .mobile-img {
+        background: url("../images/bg-intro-mobile.svg") no-repeat;
+        background-size: 100% 105%;
+        background-position: 19% 350%;
+        margin-bottom: 0px;
+
+        
+
+    }
+
+    .next-generation .mobile-img img {
+        object-position: 0px -130px;
+         max-width: 100%;
+         max-height: auto;
+         object-fit: contain;
+    }
+
+    .next-generation .next-gen {
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 100px 20px;
+        margin-top: -100px;
+
+    }
+
+    .next-generation .next-gen h1 {
+        font-size: 40px;
+        padding-bottom: 30px;
+        margin-left: 0px;
+        color: var(--Dark-Blue);
+
+    }
+
+    .next-generation .next-gen p {
+        color: var(--Grayish-Blue);
+        padding-bottom: 40px;
+    }
+
+    .next-generation .next-gen a {
+        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        padding: 15px 30px;
+        color: var(--White);
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 70px; 
+        background-color: var(--Lime-Green);
+        background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    }
+
+    .next-generation .next-gen a:hover {
+        color: var(--Dark-Blue);
+        opacity: 0.5;
+    }
+
+    /************* why choose easybank *****************/
+
+    .why-choose-easybank {
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Light-Grayish-Blue);
+
+    }
+
+    .why-choose-easybank .why-easy-banking {
+        padding: 80px 20px 0px 20px;
+    }
+
+    .why-choose-easybank .why-easy-banking h3 {
+        font-size: 35px;
+        color: var(--Dark-Blue);
+        padding-bottom: 40px;
+        margin-left: 65px;
+    }
+
+    .why-choose-easybank .why-easy-banking p {
+        color: var(--Grayish-Blue);
+        padding-bottom: 60px;
+        margin-right: 0px;
+    }
+
+    .why-choose-easybank .easy-banking {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .why-choose-easybank .easy-banking img {
+        padding-bottom: 40px;
+        margin-left: 120px;
+    }
+
+    .why-choose-easybank .easy-banking h4 {
+        padding-bottom: 30px;
+        columns: var(--Dark-Blue);
+        font-size: 20px;
+        margin-left: 90px;
+    }
+
+    .why-choose-easybank .easy-banking .open-api h4{
+        margin-left: 120px;
+    }
+
+    .why-choose-easybank .easy-banking p {
+        padding-bottom: 100px;
+        color: var(--Grayish-Blue);
+    }
+
+    /*************** latest artticle section ***********/
+
+    .latest-article {
+        justify-content: center;
+        justify-items: center;
+        /* background-color: var(--Very-Light-Gray); */
+        margin-bottom: -20px;
+    }
+
+    .latest-article h3 {
+        color: var(--Dark-Blue);
+        font-size: 35px;
+        padding: 90px 20px 40px 60px;
+    }
+
+    .by-clair {
+        display: block;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .by-clair .by-claire img,
+    .by-clair .by-wilson img {
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .by-clair .by-claire img.currency-image {
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+
+    .by-clair .by-claire,
+    .by-clair .by-wilson {
+        background-color: var(--White);
+        margin-bottom: 20px;
+        border-radius: 6px;
+    }
+
+    .by-clair .by-claire p>span,
+    .by-clair .by-wilson p>span {
+        color: var(--Grayish-Blue);
+        font-size: 12px;
+    }
+
+    .by-clair .by-claire .by-p,
+    .by-clair .by-wilson .by-p {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+
+    .by-clair .by-claire h4,
+    .by-clair .by-wilson h4 {
+        color: var(--Dark-Blue);
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .by-clair .by-claire p,
+    .by-clair .by-wilson p {
+        color: var(--Grayish-Blue);
+        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /**************** footer section *******************/
+    .footer-section {
+        background-color: var(--Dark-Blue);
+
+    }
+
+    .footer-section footer {
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-section footer .logo-with-icons {
+        padding-left: 100px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        
+    }
+
+    .footer-section footer .logo-with-icons img {
+        filter: brightness(0.4) invert(1);
+    
+    }
+
+    .footer-section footer .logo-with-icons .footer-icons {
+        padding-top: 40px;
+        margin-left: -40px;
+        
+    }
+
+    .footer-section footer .logo-with-icons .footer-icons a{
+        padding-left: 20px;
+        filter: brightness(0) invert(1);
+    }
+
+    .footer-section footer ul {
+        list-style-type: none;
+        text-decoration: none;
+        margin-bottom: 40px;
+        margin-top: -40px;
+    }
+
+    .footer-section footer ul li {
+        padding-bottom: 15px;
+        color: var(--Grayish-Blue);
+        margin-left: 140px;
+    }
+
+    .footer-section footer ul li a {
+        text-decoration: none;
+        color: var(--Very-Light-Gray);
+    }
+
+    .footer-section footer .footer-link-2 {
+        margin-right: 0px;
+    }
+
+    .footer-section footer .footer-link-3 a {
+        text-decoration: none;
+        text-align: center;
+        border-radius: 50px;
+        padding: 10px 30px;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        color: var(--White);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--Lime-Green);
+        background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    }
+
+    .footer-section footer .footer-link-3 a:hover {
+        color: var(--Dark-Blue);
+        opacity: 0.5;
+    }
+
+    .footer-section footer .footer-link-3 ul {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        margin-left: -80px;
+    
+    }
+   
+}
